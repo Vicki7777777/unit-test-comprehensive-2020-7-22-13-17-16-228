@@ -24,4 +24,15 @@ public class GuessNumberGameTest {
         Assertions.assertEquals("0A4B",actual);
     }
 
+    @Test
+    void should_return_1A3B_when_Answer_is_3124_GuessNumber_given_1234() {
+        //given
+        String guestNumber = "3 1 2 4";
+        //when
+        GuessNumberGame guessNumberGame = new GuessNumberGame();
+        String actual = guessNumberGame.guessResult(guestNumber);
+        //then
+        Assertions.assertEquals("1A3B",actual);
+    }
+
 }
