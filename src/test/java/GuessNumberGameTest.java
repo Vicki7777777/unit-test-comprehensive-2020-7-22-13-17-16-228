@@ -14,14 +14,14 @@ public class GuessNumberGameTest {
         Assertions.assertEquals("4A0B",actual);
     }
     @Test
-    void should_return_1A3B_when_Answer_is_3124_GuessNumber_given_1234() {
+    void should_return_0A4B_when_Answer_is_4312_GuessNumber_given_1234() {
         //given
-        String guestNumber = "3 1 2 4";
+        String guestNumber = "4 3 1 2";
         //when
         GuessNumberGame guessNumberGame = new GuessNumberGame();
         String actual = guessNumberGame.guessResult(guestNumber);
         //then
-        Assertions.assertEquals("1A3B",actual);
+        Assertions.assertEquals("0A4B",actual);
     }
 
 }
