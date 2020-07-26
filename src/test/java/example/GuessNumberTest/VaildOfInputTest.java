@@ -7,9 +7,29 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 
 public class VaildOfInputTest {
     @Test
-    void should_return_wrongMessage_when_inputWrong_given_repeatInput(){
+    void should_return_false_when_input_given_repeatInput(){
         //given
         String[] input = {"1","2","1","2"};
+        VaildOfInput vaildOfInput = new VaildOfInput();
+        //when
+        boolean flag = vaildOfInput.isVaild(input);
+        //then
+        assertFalse(flag);
+    }
+    @Test
+    void should_return_true_when_input_given_rightInput(){
+        //given
+        String[] input = {"1","2","3","3"};
+        VaildOfInput vaildOfInput = new VaildOfInput();
+        //when
+        boolean flag = vaildOfInput.isVaild(input);
+        //then
+        assertFalse(flag);
+    }
+    @Test
+    void should_return_false_when_input_given_nullInput(){
+        //given
+        String[] input = null;
         VaildOfInput vaildOfInput = new VaildOfInput();
         //when
         boolean flag = vaildOfInput.isVaild(input);
