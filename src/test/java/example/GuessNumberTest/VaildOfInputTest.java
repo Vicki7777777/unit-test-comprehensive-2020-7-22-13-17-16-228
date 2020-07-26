@@ -36,4 +36,14 @@ public class VaildOfInputTest {
         //then
         assertFalse(flag);
     }
+    @Test
+    void should_return_false_when_input_given_onlyTwoNumber(){
+        //given
+        String[] input = {"1","2"};
+        VaildOfInput vaildOfInput = new VaildOfInput();
+        //when
+        boolean flag = vaildOfInput.isVaild(input);
+        //then
+        assertFalse(flag);
+    }
 }
