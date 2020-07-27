@@ -11,11 +11,9 @@ public class GuessNumberGame{
         String[] guestNumberArray;
         if(guestNumber != null) {
             guestNumberArray = guestNumber.split(" ");
+            return judgeResult(guestNumberArray);
         }
-        else {
-            return "Wrong Input，Input again";
-        }
-        return judgeResult(guestNumberArray);
+        return "Wrong Input，Input again";
 
     }
 
