@@ -13,7 +13,7 @@ public class VaildOfInputTest {
         String[] input = {"1","2","1","2"};
         VaildOfInput vaildOfInput = new VaildOfInput();
         //when
-        boolean flag = vaildOfInput.isVaild(input);
+        boolean flag = vaildOfInput.isValid(input);
         //then
         assertFalse(flag);
     }
@@ -23,7 +23,7 @@ public class VaildOfInputTest {
         String[] input = {"1","2","3","4"};
         VaildOfInput vaildOfInput = new VaildOfInput();
         //when
-        boolean flag = vaildOfInput.isVaild(input);
+        boolean flag = vaildOfInput.isValid(input);
         //then
         assertTrue(flag);
     }
@@ -33,7 +33,7 @@ public class VaildOfInputTest {
         String[] input = null;
         VaildOfInput vaildOfInput = new VaildOfInput();
         //when
-        boolean flag = vaildOfInput.isVaild(input);
+        boolean flag = vaildOfInput.isValid(input);
         //then
         assertFalse(flag);
     }
@@ -43,7 +43,7 @@ public class VaildOfInputTest {
         String[] input = {"1","2"};
         VaildOfInput vaildOfInput = new VaildOfInput();
         //when
-        boolean flag = vaildOfInput.isVaild(input);
+        boolean flag = vaildOfInput.isValid(input);
         //then
         assertFalse(flag);
     }
@@ -53,7 +53,7 @@ public class VaildOfInputTest {
         String[] input = {"1","2","3","4","5"};
         VaildOfInput vaildOfInput = new VaildOfInput();
         //when
-        boolean flag = vaildOfInput.isVaild(input);
+        boolean flag = vaildOfInput.isValid(input);
         //then
         assertFalse(flag);
     }

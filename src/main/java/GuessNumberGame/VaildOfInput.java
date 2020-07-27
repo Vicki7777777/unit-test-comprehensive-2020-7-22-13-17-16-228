@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class VaildOfInput {
 
-    public boolean isVaild(String[] input) {
+    public boolean isValid(String[] input) {
         boolean vaild = true;
         Set<String> vaildSet = new HashSet<String>();
         if(input == null || (input.length != 4)){
