@@ -1,11 +1,5 @@
 package GuessNumberGame;
 
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
-
-import static java.lang.String.valueOf;
-
 public class GuessNumberGame{
     private String[] answer = new String[4];
     public GuessNumberGame(AnswerSolution answerSolution){
