@@ -15,6 +15,11 @@ public class GuessNumberGame{
         else {
             return "Wrong Input，Input again";
         }
+        return judgeResult(guestNumberArray);
+
+    }
+
+    public String judgeResult(String[] guestNumberArray){
         int sameElement = 0;
         int sameLocation = 0;
 
@@ -22,9 +27,9 @@ public class GuessNumberGame{
             for(int j = 0;j<answer.length;j++) {
                 if (guestNumberArray[i].equals(answer[j])) {
                     if(i == j) {
-                        sameLocation += 1;
+                        sameLocation ++;
                     } else{
-                        sameElement += 1;
+                        sameElement ++;
                     }
                 }
 
@@ -33,5 +38,6 @@ public class GuessNumberGame{
 
         return sameLocation+"A"+sameElement+"B";
     }
+
 
 }
